@@ -10,6 +10,11 @@ namespace _1_1_vaxelpengar
     {
         static void Main(string[] args)
         {
+
+            //Ange variabel för totalsumman
+            //Ange variabler för erhållet belopp
+            //skapa ett kvitto
+
         }
     }
 }
