@@ -15,15 +15,31 @@ namespace _1_1_vaxelpengar
             double totalsum; 
             int amountReceived;
 
+            while (true)
+            
+            {
+                try
+            }
+
+
             Console.Write("Ange totalsumma:");
             totalsum = double.Parse(Console.ReadLine());
 
+           if (totalsum >=1)
+           {
+               break;
+           }
 
-            Console.Write("Ange erhållet belopp:");
-            amountReceived = int.Parse(Console.ReadLine());
+           else
+               Console.BackgroundColor=ConsoleColor.Red;
+                Console.Write("FEL! Erhållet beopp felaktigt.");
+                Console.ResetColor();
+
+          //  Console.Write("Ange erhållet belopp:");
+           // amountReceived = int.Parse(Console.ReadLine());
 
                
-                
+               
 
             
             
