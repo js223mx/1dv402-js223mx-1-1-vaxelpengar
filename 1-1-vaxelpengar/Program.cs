@@ -12,16 +12,21 @@ namespace _1_1_vaxelpengar
         {
 
             //Ange variabel för totalsumman samt erhållet belopp
-            double price= 371.38;
-            int amount_received= 1000;
+            double totalsum; 
+            int amountReceived;
 
-                //Uträkning av erhållet belopp - priset, bör dock inte vara double
-                 double total = (int)amount_received-(double)price;
-                 Console.Write((double)total);
+            Console.Write("Ange totalsumma:");
+            totalsum = double.Parse(Console.ReadLine());
+
+
+            Console.Write("Ange erhållet belopp:");
+            amountReceived = int.Parse(Console.ReadLine());
+
+               
                 
 
             
-            //skapa ett kvitto
+            
 
         }
     }
