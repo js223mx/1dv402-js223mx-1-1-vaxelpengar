@@ -97,16 +97,30 @@ uint subTotalPrice = (uint)Math.Round(totalsum);
             //skriv ut ett kvitto
 
             Console.WriteLine("\nKVITTO");
-            Console.WriteLine("------------------------------");
+            Console.WriteLine("-----------------------------------");
             Console.WriteLine("Totalt               :       {0:c}", totalsum);
-            Console.WriteLine("Öresavrundning       :       {0:c}",roundingOffAmount);
+            Console.WriteLine("Öresavrundning       :       {0:c}", roundingOffAmount);
             Console.WriteLine("Att betala           :       {0:c}", subTotalPrice);
-            Console.WriteLine("Betalat              :       {0:c}",amountReceived);
-            Console.WriteLine("Tillbaka             :       {0:c}",amountBack);
-            Console.WriteLine("------------------------------");
-
+            Console.WriteLine("Betalat              :       {0:c}", amountReceived);
+            Console.WriteLine("Tillbaka             :       {0:c}", amountBack);
+            Console.WriteLine("-----------------------------------");
 
             //tala om hur mycket av varje peng som ska tillbaka
+
+            if (fivehundred > 0);
+            Console.WriteLine("500-lappar          : {0}", fivehundred);
+            if (hundred > 0);
+            Console.WriteLine("100-lappar          : {0}", hundred);
+            if (fifty > 0);
+            Console.WriteLine("50-lappar           : {0}", fifty);
+            if (twenty > 0);
+            Console.WriteLine("20-lappar           : {0}", twenty);
+            if (ten > 0);
+            Console.WriteLine("10-kronor           : {0}", ten);
+            if (five > 0);
+            Console.WriteLine("5-kronor            : {0}", five);
+            if (one > 0);
+            Console.WriteLine("1-kronor            : {0}", one);   
 
         }
     }
