@@ -78,7 +78,7 @@ uint subTotalPrice = (uint)Math.Round(totalsum);
             double roundingOffAmount = subTotalPrice - totalsum;
             uint amountBack = amountReceived - subTotalPrice;
 
-            uint fivehundred = amountBack / 500;
+            uint fivehundred = amountBack / 500; //modelus tar hand om resten
             uint cash = amountBack % 500;
             uint hundred = cash / 100;
             cash = cash % 100;
