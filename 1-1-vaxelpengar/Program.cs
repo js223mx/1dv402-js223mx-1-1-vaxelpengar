@@ -15,34 +15,65 @@ namespace _1_1_vaxelpengar
             double totalsum; 
             int amountReceived;
 
+
             while (true)
-            
             {
                 try
+               {
+                Console.Write("Vänligen ange belopp för köp: ");
+                totalsum=double.Parse(Console.ReadLine());
+
+                if (totalsum >0)
+                {
+                    break;
+                }
+
+                    else
+                {
+                    Console.BackgroundColor=ConsoleColor.Red;
+                    Console.Write("FEL! Vänligen ange giltigt belopp.");
+                    Console.ResetColor();
+                }
+               }
+                
+                   catch
+                   {
+                    Console.BackgroundColor=ConsoleColor.Red;
+                    Console.Write("FEL! Ogiltig inmatning, vänligen ange giltigt belopp.");
+                    Console.ResetColor();
+                   }
             }
 
 
-            Console.Write("Ange totalsumma:");
-            totalsum = double.Parse(Console.ReadLine());
+            while (true)
+            {
+                try
+                {
+                    Console.Write("Vänligen ange belopp för köp: ");
+                    amountReceived = int.Parse(Console.ReadLine());
 
-           if (totalsum >=1)
-           {
-               break;
-           }
+                    if (amountReceived >totalsum)
+                    {
+                        break;
+                    }
 
-           else
-               Console.BackgroundColor=ConsoleColor.Red;
-                Console.Write("FEL! Erhållet beopp felaktigt.");
-                Console.ResetColor();
+                    else
+                    {
+                        Console.BackgroundColor = ConsoleColor.Red;
+                        Console.Write("FEL! Vänligen ange giltigt belopp.");
+                        Console.ResetColor();
+                    }
+                }
 
-          //  Console.Write("Ange erhållet belopp:");
-           // amountReceived = int.Parse(Console.ReadLine());
+                catch
+                {
+                    Console.BackgroundColor = ConsoleColor.Red;
+                    Console.Write("FEL! Ogiltig inmatning, vänligen ange giltigt belopp.");
+                    Console.ResetColor();
+                }
+            }
 
-               
-               
 
-            
-            
 
         }
     }
