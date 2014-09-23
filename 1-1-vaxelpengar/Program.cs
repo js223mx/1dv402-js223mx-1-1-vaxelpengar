@@ -28,7 +28,7 @@ namespace _1_1_vaxelpengar
                     break;
                 }
 
-                    else
+                    else //fångar fel inmatning
                 {
                     Console.BackgroundColor=ConsoleColor.Red;
                     Console.Write("FEL! Vänligen ange giltigt belopp.");
@@ -36,7 +36,7 @@ namespace _1_1_vaxelpengar
                 }
                }
                 
-                   catch
+                   catch //fångar fel inmatning av typen string
                    {
                     Console.BackgroundColor=ConsoleColor.Red;
                     Console.Write("FEL! Ogiltig inmatning, vänligen ange giltigt belopp.");
@@ -58,7 +58,7 @@ uint subTotalPrice = (uint)Math.Round(totalsum);
                         break;
                     }
 
-                    else
+                    else //fångar fel inmatning  
                     {
                         Console.BackgroundColor = ConsoleColor.Red;
                         Console.Write("FEL! Vänligen ange giltigt belopp.");
@@ -66,7 +66,7 @@ uint subTotalPrice = (uint)Math.Round(totalsum);
                     }
                 }
 
-                catch
+                catch //fångar fel intmatning av typen string
                 {
                     Console.BackgroundColor = ConsoleColor.Red;
                     Console.Write("FEL! Ogiltig inmatning, vänligen ange giltigt belopp.");
@@ -80,19 +80,33 @@ uint subTotalPrice = (uint)Math.Round(totalsum);
 
             uint fivehundred = amountBack / 500;
             uint cash = amountBack % 500;
-            uint hundra = cash / 100;
+            uint hundred = cash / 100;
             cash = cash % 100;
-            uint femtio = cash / 50;
+            uint fifty = cash / 50;
             cash = cash % 50;
-            uint tjugo = cash / 20;
+            uint twenty = cash / 20;
             cash = cash % 20;
-            uint tio = cash /10;
+            uint ten = cash /10;
             cash = cash % 10;
-            uint fem = cash / 5;
+            uint five = cash / 5;
             cash = cash % 5;
-            uint en = cash / 1;
+            uint one = cash / 1;
             cash = cash % 1;
 
+
+            //skriv ut ett kvitto
+
+            Console.WriteLine("\nKVITTO");
+            Console.WriteLine("------------------------------");
+            Console.WriteLine("Totalt               :       {0:c}", totalsum);
+            Console.WriteLine("Öresavrundning       :       {0:c}",roundingOffAmount);
+            Console.WriteLine("Att betala           :       {0:c}", subTotalPrice);
+            Console.WriteLine("Betalat              :       {0:c}",amountReceived);
+            Console.WriteLine("Tillbaka             :       {0:c}",amountBack);
+            Console.WriteLine("------------------------------");
+
+
+            //tala om hur mycket av varje peng som ska tillbaka
 
         }
     }
