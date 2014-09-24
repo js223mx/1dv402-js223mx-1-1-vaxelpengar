@@ -100,9 +100,9 @@ uint subTotalPrice = (uint)Math.Round(totalsum);
             Console.WriteLine("-----------------------------------");
             Console.WriteLine("Totalt               :       {0:c}", totalsum);
             Console.WriteLine("Öresavrundning       :       {0:c}", roundingOffAmount);
-            Console.WriteLine("Att betala           :       {0:c}", subTotalPrice);
-            Console.WriteLine("Betalat              :       {0:c}", amountReceived);
-            Console.WriteLine("Tillbaka             :       {0:c}", amountBack);
+            Console.WriteLine("Att betala           :       {0:c0}", subTotalPrice);
+            Console.WriteLine("Betalat              :       {0:c0}", amountReceived);
+            Console.WriteLine("Tillbaka             :       {0:c0}", amountBack);
             Console.WriteLine("-----------------------------------");
 
             //tala om hur mycket av varje peng som ska tillbaka
